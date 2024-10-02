@@ -1,2 +1,33 @@
 /* Claudia Rodríguez Fuertes UO288406*/
 
+/*
+  Paleta de colores:
+    Dark blue: 004369
+    Navy Blue: 01949A
+    Red: DB1F48
+    Off-White: F8F8F8
+*/
+
+/* BODY - Especificidad del selector: 0, 0, 1 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F8F8;
+    color: #004369;
+}
+
+/* HEADER - Especificidad del selector: 0, 0, 1 */
+header {   
+    background-color: #01949A; /* #004369 */
+}
+
+/* H1 - Especificidad del selector: 0, 0, 1 */
+h1 {   
+    background-color: #DB1F48;
+}
+
+/* NAV - Especificidad del selector: 0, 0, 1 */
+nav {   
+    color: #F8F8F8;
+    background-color: #F8F8F8;
+}
+
