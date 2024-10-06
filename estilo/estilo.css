@@ -25,7 +25,7 @@ header {
 h1 {   
     /* color: heredado de body */
     /* MIRAR ESTO QUE DA MAL DE CONTRASTE */
-    color: #000000;
+    color: #F2F2F2 ;
     background-color: #DB1F48;
 }
 
