@@ -4,7 +4,7 @@
 	 <!-- Datos que describen el documento -->
 	 <meta charset="UTF-8" />
 	
-	 <title>Piloto</title>
+	 <title>F1 Desktop - Piloto</title>
 	 <link rel="icon" href="multimedia/imagenes/favicon.ico" />
 
      <meta name ="author" content ="Claudia Rodriguez Fuertes" />
@@ -13,25 +13,33 @@
      <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
      
 	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 	</head>
 
 	<body>
 		<header>
+			<h1> <a href="index.html"> F1 Desktop </a> </h1>
+
 			<nav>
-				<a href="index.html" title="Inicio">Inicio</a>
-				<a href="piloto.html" title="Piloto">Piloto</a>
-				<a href="noticias.html" title="Noticias">Noticias</a>
-				<a href="calendario.html" title="Calendario">Calendario</a>
-				<a href="meteorologia.html" title="Meteorología">Meteorología</a>
-				<a href="circuito.html" title="Circuito">Circuito</a>
-				<a href="viajes.html" title="Viajes">Viajes</a>
-				<a href="juegos.html" title="Juegos">Juegos</a>
+				<a href="index.html" accesskey="i" tabindex="1" title="Inicio">Inicio</a>
+				<a href="piloto.html" accesskey="p" tabindex="2" class="active" title="Piloto">Piloto</a>
+				<a href="noticias.html" accesskey="n" tabindex="3" title="Noticias">Noticias</a>
+				<a href="calendario.html" accesskey="l" tabindex="4" title="Calendario">Calendario</a>
+				<a href="meteorologia.html" accesskey="m" tabindex="5" title="Meteorología">Meteorología</a>
+				<a href="circuito.html" accesskey="c" tabindex="6" title="Circuito">Circuito</a>
+				<a href="viajes.html" accesskey="v" tabindex="7" title="Viajes">Viajes</a>
+				<a href="juegos.html" accesskey="j" tabindex="8" title="Juegos">Juegos</a>
 			 </nav>
-	 
-			 <h1> Piloto </h1>
+	 	 
 		</header>
 		
 		<main>
+
+			<p> Estás en: 
+				<a href="index.html" title="Inicio">Inicio </a>
+				<a href="piloto.html" title="Piloto"> >> Piloto </a>
+			</p>
+
 			<section>
 				<h2>  Fernando Alonso Díaz </h2>
 				<p> Fernando Alonso es uno de los pilotos de automovilismo más destacados y reconocidos en la historia de la Fórmula 1.</p>
@@ -64,7 +72,7 @@
 				<picture>
 					<source media="(max-width: 465px)" srcset="multimedia/imagenes/fernandoCopa.png">
 					<source media="(max-width: 799px)" srcset="multimedia/imagenes/fernandoCopaTablet.png">
-					<source media="(max-width: 800px)" srcset="multimedia/imagenes/fernandoCopaMonitor.png">
+					<source media="(min-width: 800px)" srcset="multimedia/imagenes/fernandoCopaMonitor.png">
 					<img src="multimedia/imagenes/fernandoCopa.png" alt="Imagen que contiene a Fernando Alonso sujetando una copa">
 				</picture>
 			</section>
@@ -178,18 +186,17 @@
 		<aside>
 			<h3> Conceptos de Fórmula 1 </h3>
 			<dl>
-				<dt><strong> Pit stop: </strong></dt>
+				<dt> Pit stop: </dt>
 					<dd> Parada rápida en boxes para cambiar neumáticos o realizar reparaciones.</dd>
-				<dt> <strong> Pole: </strong> </dt>
+				<dt>  Pole: </dt>
 					<dd> La primera posición en la parrilla de salida obtenida en la clasificación. </dd>
-				<dt> <strong> Rake: </strong> </dt>
+				<dt> Rake: </dt>
 					<dd> Ángulo de inclinación del coche desde la parte delantera hacia la trasera.</dd>
-				<dt> <strong> Efecto suelo: </strong> </dt>
+				<dt> Efecto suelo: </dt>
 					<dd> Fenómeno aerodinámico que maximiza la adherencia del coche al suelo.</dd>
-				<dt> <strong> DRS: </strong> </dt>
+				<dt> DRS: </dt>
 					<dd> Sistema de reducción de resistencia aerodinámica para facilitar adelantamientos.</dd>
 			</dl>	
-
 		</aside>
 	</body>
 </html>

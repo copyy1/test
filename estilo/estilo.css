@@ -4,34 +4,170 @@
   Paleta de colores:
     Dark blue: 004369
     Navy Blue: 01949A
-    Red: DB1F48
+    Red: DB1F48 // A51836
     Off-White: F8F8F8
+    Green: E7FFCC
+    Azul: B4DAF8
+    Azul claro: E4F6F7
 */
 
-/* BODY - Especificidad del selector: 0, 0, 1 */
+/* BODY - Especificidad: 0, 0, 1 */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #F8F8F8;
     color: #004369;
+    background-color: #F8F8F8;  
 }
 
-/* HEADER - Especificidad del selector: 0, 0, 1 */
+/* P - Especificidad: 0, 0, 1 */
+p { 
+    text-align: justify;
+}
+
+/* HEADER - Especificidad: 0, 0, 1 */
 header {   
-    /* color: heredado de body */
-    background-color: #01949A; /* #004369 */
+    /* color: heredado de body #004369
+    color: #F8F8F8 ;*/
+    background-color: #A51836; 
 }
 
-/* H1 - Especificidad del selector: 0, 0, 1 */
-h1 {   
-    /* color: heredado de body */
-    /* MIRAR ESTO QUE DA MAL DE CONTRASTE */
-    color: #F2F2F2 ;
-    background-color: #DB1F48;
+/* HEADER a- Especificidad: 0, 0, 2 */
+header a {   
+    /* background: heredado de header #A51836*/
+    color: #F8F8F8 ;   
 }
 
-/* NAV - Especificidad del selector: 0, 0, 1 */
-nav {   
+/* HEADER a:hover- Especificidad: 0, 1, 2 */
+header a:hover {
+    /* background: heredado de header #A51836*/
+    color: #E7FFCC; 
+    text-decoration: underline;    
+}
+
+/* H1 - Especificidad: 0, 0, 1 
+h1 {     
+    color: #F8F8F8 ;
+    background-color: #A51836;
+}*/
+
+/* H1 a - Especificidad: 0, 0, 2 
+h1 a {
+    /* background: heredado de body #F8F8F8
+    color: #F8F8F8 ;
+    text-decoration: none;
+}*/
+
+/* H1 a:hover - Especificidad: 0, 1, 2 
+h1 a:hover {
+    /* background: heredado de body #F8F8F8
+    color: #E7FFCC; 
+    text-decoration: underline;    
+}*/
+
+/* H2 - Especificidad: 0, 0, 1 */
+h2 {
+    font-size: 2em;
+}
+
+/* NAV - Especificidad: 0, 0, 1 
+nav a {   
     color: #F8F8F8;
-    /*background-color: #F8F8F8;*/
+    /*background-color: #F8F8F8;
+}*/
+
+/* MAIN:nth-child - Especificidad: 0, 1, 3 */
+main > p:first-of-type a {
+    /* background: heredado de body #F8F8F8*/
+    color: #004369;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+/* a - Especificidad: 0, 0, 1 */
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* a:hover - Especificidad: 0, 1, 1 */
+a:hover {
+    /* background: heredado de body #F8F8F8*/
+    color: #A51836; 
+    text-decoration: underline; 
+}
+
+/* section:nth-of-type(2) ul - Especificidad: 0, 1, 2 */
+section:nth-of-type(2) ul {
+    list-style-type: "★";
+}
+
+/* ul li - Especificidad: 0, 0, 2 */
+ul li {  margin-bottom: 0.4em;}
+
+/* ol li - Especificidad: 0, 0, 2 */
+ol li { margin-bottom: 0.4em;}
+
+/* dt - Especificidad: 0, 0, 1 */
+dt { 
+    font-weight: bold; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* dl dt - Especificidad: 0, 0, 2 */
+dl dt {
+    margin-bottom: 0.4em;
+    margin-top: 0.4em; 
+}
+
+/* table - Especificidad: 0, 0, 1 */
+table {
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+/* table caption - Especificidad: 0, 0, 2 */
+table caption {
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    text-decoration: underline;
+}
+
+/* th- Especificidad: 0, 0, 1 */
+th {
+    border: 0.15em solid #000000;
+    /* color: heredado de body #004369*/
+    background-color: #B4DAF8; /*c2f0f1 adf7aa*/
+}
+
+/* td- Especificidad: 0, 0, 1 */
+td {
+    text-align: center;
+    border: 0.15em solid #004369;
+    /* color: heredado de body #004369*/
+    background-color: #E4F6F7; /*f6e4f7 e4f6f7*/
+}
+
+/* class="active"- Especificidad: 0, 1, 0 */
+.active {
+    color: #000000;
+    background-color: #F8F8F8;
+}
+
+/* class="active" hover - Especificidad: 0, 2, 0 */
+.active:hover {
+    color: #A51836;
+    /* background-color: heredado de active #F8F8F8*/ 
+}
+
+/* video - Especificidad: 0, 0, 1 */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* img - Especificidad: 0, 0, 1 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
