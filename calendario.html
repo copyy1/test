@@ -11,8 +11,11 @@
      <meta name ="keywords" content ="" />
      <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
      
+	 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	 <script src= "js/agenda.js"></script>
 	 <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
 	 <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	 <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css" />
 	</head>
 	<body>
 		<header>
@@ -31,16 +34,15 @@
 	 	 
 		</header>
 
-		<main>
-			<p> Estás en: 
-				<a href="index.html" title="Inicio">Inicio </a>
-				<a href="calendario.html" title="Calendario"> >> Calendario </a>
-			</p>
+		<p> Estás en: 
+			<a href="index.html" title="Inicio">Inicio </a>
+			<a href="calendario.html" title="Calendario"> >> Calendario </a>
+		</p>
 
-			 <!-- Datos con el contenido que aparece en el navegador -->
-		 
-			 <h2> documento para utilizar en otros módulos de la asignatura </h2>
-			 <p> En desarrollo </p>
-		</main>	
+		<button> Ver calendario de carreras </button>
+
+		<script>
+			var agenda = new Agenda("https://api.jolpi.ca/ergast/f1/current");
+		</script>
 	</body>
 </html>

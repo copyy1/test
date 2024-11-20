@@ -1,0 +1,30 @@
+/* Claudia Rodríguez Fuertes UO288406*/
+
+/* main  - Especificidad: 0, 0, 1 */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* main article - Especificidad: 0, 0, 2 */
+main article {
+    text-align: center;
+    color: #000000;
+    background-color: #c8e2f7;
+    margin: 0.8em;
+    box-shadow: 0.15em 0.15em 0.15em rgba(0,0,0, 0.3);
+    padding: 1em;
+    border-radius: 0.5em 
+    
+}
+ 
+/* main article h3:nth-of-type(2) - Especificidad: 0, 1, 3 */
+main article h3:nth-of-type(2) {
+    font-size: 1em;
+}
+
+/* main article p - Especificidad: 0, 0, 3 */
+main article p {
+    text-align: center;
+}

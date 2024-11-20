@@ -13,6 +13,12 @@
      
 	 <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
 	 <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	 <link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
+	 <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+	 		 integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+	 		 crossorigin="anonymous">
+	 </script>
+	 <script src="js/pais.js"></script>
 	</head>
 	<body>
 		<header>
@@ -31,16 +37,25 @@
 	 	 
 		</header>
 
-		<main>
-			<p> Estás en: 
-				<a href="index.html" title="Inicio">Inicio </a>
-				<a href="meteorologia.html" title="Meteorología"> >> Meteorología </a>
-			</p>
+		<p> Estás en: 
+			<a href="index.html" title="Inicio">Inicio </a>
+			<a href="meteorologia.html" title="Meteorología"> >> Meteorología </a>
+		</p>
+		<h2> Meteorología </h2>
 
-			 <!-- Datos con el contenido que aparece en el navegador -->
-		 
-			 <h2> documento para utilizar en otros módulos de la asignatura </h2>
-			 <p> En desarrollo </p>
-		</main>	
+		<script>			
+			var pais = new Pais("Qatar", "Doha", "2.7 millones");
+			document.write("<article>")
+			document.write("<h2>Información del País</h2>")
+			document.write("<h3>" + pais.getCountryName() + "</h3>")
+			document.write("<p>Capital: " + pais.getCapitalName() + "</p>")
+			pais.completeInfo("Losail", "Monarquía absoluta", "25.489216, 51.449580", "Islam");
+			document.write(pais.getSecondaryinfo())
+			pais.writeGoalCoordinates();
+			document.write("</article>");
+
+			pais.callApi();
+		</script>
+
 	</body>
 </html>
